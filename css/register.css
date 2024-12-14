@@ -1,0 +1,63 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-block: 70px;
+}
+
+.form-title {
+    color: var(--color-dark);
+}
+
+#regForm {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.reg__logo {
+    margin-top: 50px;
+    width: 200px;
+    height: auto;
+}
+
+.field__errors {
+    color: red;
+}
+
+
+/* Инпут с ошибкой */
+.testinput.is-invalid {
+    color: red;
+    border: 2.5px solid red;
+}
+
+.testinput.is-invalid + .labelline{
+    color: red;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 12px;
+    transform: translate(-5px, -10px) scale(0.77);
+    z-index: 110;
+}
+
+
+
+
+/* test */
+
+.testButtonForRedirect {
+    position: absolute;
+    font-size: 12px;
+    padding-block: 2px;
+    padding-inline: 5px;
+    border: 1px solid lightgreen;
+    top: 10px;
+    left: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    color: lightgreen;
+}

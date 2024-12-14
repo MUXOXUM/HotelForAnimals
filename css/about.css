@@ -1,0 +1,127 @@
+.main {
+    padding-block: 100px;
+}
+
+.header__navigation-list {
+    gap: 35px;
+}
+
+
+/* about */
+.about {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.about__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about__subtitle {
+    font-size: 20px;
+}
+
+
+/* technologies */
+.technologies__image {
+    width: 412px;
+    height: 400px;
+    margin-top: -25px;
+    border: 7px solid var(--color-semiLight);
+}
+
+.technologies__list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.technologies__item {
+    background-color: var(--color-semiLight);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    height: 390px;
+}
+
+.technologies__body {
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    justify-items: center;
+}
+
+.technologies__title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.technologies__desc {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.technologies__button {
+    width: 350px;
+}
+
+/* 900px */
+@media (max-width: 56.25rem) {
+    .main {
+        padding-block: 50px;
+    }
+
+    /* about */
+    .about {
+        margin-bottom: 50px;
+    }
+
+    .about__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+
+    /* technologies */
+    .technologies__item {
+        padding-inline: 20px;
+        padding-block: 20px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .technologies__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .technologies__title {
+        font-size: 23px;
+        font-weight: 500;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .technologies__desc {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    .technologies__image {
+        width: 382px;
+        height: auto;
+        margin-top: 0;
+        border: none;
+    } 
+
+
+}
+
