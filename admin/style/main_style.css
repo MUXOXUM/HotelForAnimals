@@ -77,14 +77,15 @@ a{
 }
 .tools{
     display: flex;
-    align-items: center;
+    align-items: start;
+    //*ustify-content: start;*/
 }
 .tool-button{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px 15px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 5px 0;
     background-color: #4A4947;
     
 }
