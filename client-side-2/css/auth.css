@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-block: 70px;
+}
+
+.form-title {
+    color: var(--color-dark);
+}
+
+#authForm {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+}
+
+.reg__logo {
+    margin-top: 50px;
+    width: 200px;
+    height: auto;
+}
+
+.register-link {
+    font-size: 16px;
+}
+
+.register-link--underlined {
+    text-decoration: underline;
+}
+
+.field__errors {
+    color: red;
+}
+
+
+/* Инпут с ошибкой */
+.testinput.is-invalid {
+    color: red;
+    border: 2.5px solid red;
+}
+
+.testinput.is-invalid + .labelline{
+    color: red;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 12px;
+    transform: translate(-5px, -10px) scale(0.77);
+    z-index: 110;
+}
