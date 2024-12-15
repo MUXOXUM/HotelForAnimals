@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="style/main_style.css"> <!--Основные стил -->
     <link rel="stylesheet" href="style/table_style.css"> <!--Стили таблиц-->
 
+    <style>
+        .highlight {
+            background-color: yellow;
+           color: black; /* Optionally set text color for visibility */
+        }
+    </style>
+
     <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,30 +42,45 @@
     <section class="tool-bar">
         <h1>Обработка заявок</h1>
         <div class="tools">
-            <div class="tool-button">
+            <div class="tool-button" id="successButton">
                 <img src="image/profile.png" alt="#">
                 <a href="#">подтвердить бронь</a>
             </div>
-            <div class="tool-button">
+            <div class="tool-button" id="rejectButton">
                 <img src="image/reject.png#">
                 <a href="#">отказ по заявке</a>
             </div>
-            <div class="tool-button">
-                <img src="image/binocular.png" alt="#">
-                <a href="#">фильтрация</a>
+            <div class="filter-tool">
+
+                <div class="tool-button" id="filterA">
+                    <img src="image/binocular.png" alt="#">
+                    <a href="#" id="filterTextA">фильтрация: off</a>
+                </div>
+
+                <div id="filterToolOn">
+                    <div class="tool-button" id="filterS">
+                        <a href="#" id="filterTextS">фильтрация: успешно</a>
+                    </div>
+                    <div class="tool-button" id="filterR">
+                        <a href="#" id="filterTextR">фильтрация: отказано</a>
+                    </div>
+                    <div class="tool-button" id="filterI">
+                        <a href="#" id="filterTextI">фильтрация: в обработке</a>
+                    </div>
+                </div>
+                
+
             </div>
-            <div class="tool-button-input">
-                <input type="text" placeholder="Поиск...">
-            </div>
+
         </div>
     </section>
 
     
     <!--Основное содержание-->
-    <section class="main-content">
+    <section class="main-content" id="main">
 
         
-        <table>
+        <table id="reqTable">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -73,76 +95,17 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="inprocess">
-                    <td>1</td>
-                    <td>в обработке</td>
-                    <td>Акакий Акакиевич Башмачкин</td>
-                    <td>89152785656</td>
-                    <td>Кот</td>
-                    <td>12.7</td>
-                    <td>СПб, Невский проспект 13</td>
-                    <td>12.12.2012</td>
-                    <td>22.02.2022</td>
-                </tr>
-                <tr class="reject">
-                    <td>2</td>
-                    <td>отказано</td>
-                    <td>Георгий Алексеевич Ионов</td>
-                    <td>89152784556</td>
-                    <td>Сырный латте</td>
-                    <td>4.8</td>
-                    <td>Отель</td>
-                    <td>12.02.2022</td>
-                    <td>22.03.2022</td>
-                </tr>
-                <tr class="success">
-                    <td>3</td>
-                    <td>успешно</td>
-                    <td>Кирилл Сергеевич Поплевкин</td>
-                    <td>89892455656</td>
-                    <td>Кот</td>
-                    <td>12.7</td>
-                    <td>Москва, общежитие 6(66)</td>
-                    <td>01.09.2023</td>
-                    <td>28.06.2027</td>
-                </tr>
-                <tr class="reject">
-                    <td>4</td>
-                    <td>отказано</td>
-                    <td>Сармат Маратович Цалоев</td>
-                    <td>89892455656</td>
-                    <td>Вилоцераптор</td>
-                    <td>66.6</td>
-                    <td>Москва, общежитие а111аа</td>
-                    <td>21.09.2073</td>
-                    <td>28.06.2077</td>
-                </tr>
-                <tr class="success">
-                    <td>5</td>
-                    <td>успешно</td>
-                    <td>Алексей Михайлович Черников</td>
-                    <td>89185685656</td>
-                    <td>Змея (ядовитая)</td>
-                    <td>7.4</td>
-                    <td>Москва, Кремль</td>
-                    <td>11.10.2022</td>
-                    <td>22.02.2042</td>
-                </tr>
-                <tr class="inprocess">
-                    <td>6</td>
-                    <td>в обработке</td>
-                    <td>Ярастов Никита Сергеевич</td>
-                    <td>89152785656</td>
-                    <td>Собака</td>
-                    <td>12.3</td>
-                    <td>Отель</td>
-                    <td>04.02.2006</td>
-                    <td>12.12.2024</td>
-                </tr>
+                <tr></tr>
+                
             </tbody>
         </table>
 
     </section>
 
+
+    
+    <script src="script/req.js"></script>
+    <script src="script/filtering_req.js"></script>
+    <script src="script/confirm.js"></script>
 </body>
 </html>
