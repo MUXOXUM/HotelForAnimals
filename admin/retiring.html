@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/normalize.css"> <!--Нормализация-->
     <link rel="stylesheet" href="style/main_style.css"> <!--Основные стил -->
     <link rel="stylesheet" href="style/table_style.css"> <!--Стили таблиц-->
+    <link rel="stylesheet" href="style/left_panel_style.css"> <!--Стили боковой пенели-->
 
     <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,21 +20,33 @@
 </head>
 <body>
     
-    <!--Верхняя панель -->
-    <section class="top-panel">
-        <div class="top-panel-arrows">
-            <a class="left-arrow" href="homepage.html"><img src="image/left_arrow.png" alt="назад"></a>
-            <a class="right-arrow" href="#"><img src="image/right_arrow.png" alt="вперед"></a>
+    <!--Боковая панель -->
+<section class="left-panel" id="leftPanel">
+
+    <div class="top-panel-admin-info">
+        <img src="image/admin_logo.png" alt="Фото администратора">
+        <div class="admin-info-text">
+            <p id="admin-name">Алексей</p>
+            <p>Младший администратор </p> 
         </div>
-        <div class="top-panel-admin-info">
-            <p>Вы вошли как: <span id="admin-name">Алексей</span></p> <!--Имя админа в: span id="admin-name"-->
-            <img  src="image/admin_logo.png" alt="Фото администратора">
-        </div>
-    </section>
+        
+    </div>
+
+    <div class="menu">
+        <a class="menu-button" href="request_processing.html">Обработка заявок</a>
+        <a class="menu-button" href="room_control.html">Состояние номеров</a>
+        <a class="menu-button" href="owner.html">Хозяева</a>
+        <a class="menu-button" href="retiring.html">Выбывающие</a>
+        <a class="menu-button" href="pets.html">Информация о животных</a>
+        <a class="menu-button" href="#">Выйти из учетной записи</a>
+    </div>
+
+</section>
 
 
+<section class="main">
     <!--Панель инструментов-->
-    <section class="tool-bar">
+    <div class="tool-bar">
         <h1>Выбывающие</h1>
         <div class="tools">
             <div class="tool-button">
@@ -48,11 +61,11 @@
                 <input type="text" placeholder="Поиск...">
             </div>
         </div>
-    </section>
+    </div>
 
     
     <!--Основное содержание-->
-    <section class="main-content">
+    <div class="main-content">
 
         <table>
             <thead>
@@ -87,7 +100,8 @@
         </table>
 
 
-    </section>
+    </div>
+</section>
 
 </body>
 </html>

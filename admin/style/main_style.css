@@ -1,5 +1,7 @@
 body{
     background-color: #FAF7F0;
+    display: flex;
+    height: 100%;
 }
 html{
     font-family: "Inter", sans-serif;
@@ -10,55 +12,12 @@ a{
     text-decoration: none;
 }
 
-/* ВЕРХНЯЯ ПАНЕЛЬ */
-
-.top-panel{
+.main{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 30px;
-}
-
-/* СТРЕЛКИ */
-
-.top-panel-arrows{
-    display: flex;
-    margin-right: 100px;
-}
-.top-panel-arrows a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4A4947;
-    width: 60px;
-    height: 40px;
-}
-.top-panel-arrows img{
-    width: 50px;
-    height: 50px;
-}
-.right-arrow{
-    background-color: #4A4947B2 !important;
-    cursor: not-allowed;
-}
-.top-panel-arrows a:hover{ background-color: #635c5c; }
-.top-panel-arrows a:active{ background-color: #4a494788; }
-
-/* ИМЯ И ЛОГО АДМИНА*/
-
-.top-panel-admin-info{
-    display: flex;
-    align-items: center;
-    margin: 0 15px 0 0;
-}
-.top-panel-admin-info p{
-    padding-right: 20px;
-    min-width: 120px;
-}
-.top-panel-admin-info img{
-    width: 60px;
-    height: 60px;
+    justify-content: start;
 }
 
 /*  ПАНЕЛЬ ИНСТРУМЕНТОВ И ЗАГОЛОВОК */
@@ -68,7 +27,8 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2%;
+    justify-content: center;
+    margin-top: 6%;
 }
 .tool-bar h1{
     color: #4A4947;
@@ -78,7 +38,7 @@ a{
 .tools{
     display: flex;
     align-items: start;
-    //*ustify-content: start;*/
+    /*justify-content: start;*/
 }
 .tool-button{
     display: flex;
@@ -107,6 +67,10 @@ a{
 }
 .tool-button:hover{ background-color: #635c5c;}
 .tool-button:active{ background-color: #4a494788; }
+
+/*#filterToolOn{
+    position: absolute;
+}*/
 
 /* ОСНОВНОЙ КОНТЕНТ */
 .main-content{
