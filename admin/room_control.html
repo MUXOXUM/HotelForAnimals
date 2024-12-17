@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleon - Админ панель</title> <!--Не забыть поменять--> <!-- -->
+    <link rel="icon" href="image/admin_logo.png" type="image/x-icon">
+
+    <!--Стили-->
+    <link rel="stylesheet" href="style/normalize.css"> <!--Нормализация-->
+    <link rel="stylesheet" href="style/main_style.css"> <!--Основные стил -->
+    <link rel="stylesheet" href="style/room_control_style.css"> <!--Стили, специфичные для этой страницы-->
+    <link rel="stylesheet" href="style/left_panel_style.css"> <!--Стили боковой пенели-->
+
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!--Боковая панель -->
+<section class="left-panel" id="leftPanel">
+
+    <div class="top-panel-admin-info">
+        <img src="image/admin_logo.png" alt="Фото администратора">
+        <div class="admin-info-text">
+            <p id="admin-name">Алексей</p>
+            <p>Младший администратор </p> 
+        </div>
+        
+    </div>
+
+    <div class="menu">
+        <a class="menu-button" href="request_processing.html">Обработка заявок</a>
+        <a class="menu-button" href="room_control.html">Состояние номеров</a>
+        <a class="menu-button" href="owner.html">Хозяева</a>
+        <a class="menu-button" href="retiring.html">Выбывающие</a>
+        <a class="menu-button" href="pets.html">Информация о животных</a>
+        <a class="menu-button" href="#">Выйти из учетной записи</a>
+    </div>
+
+</section>
+
+
+<section class="main">
+
+    <!--Панель инструментов-->
+    <div class="tool-bar">
+        <h1>Состояние номеров</h1>
+        <div class="tools">
+            <div class="tool-button">
+                <img src="image/add.png" alt="#">
+                <a href="#">создать</a>
+            </div>
+            <div class="tool-button">
+                <img src="image/mod.png" alt="#">
+                <a href="#">изменить статус номера</a>
+            </div>
+            <div class="tool-button">
+                <img src="image/print.png" alt="#">
+                <a href="#">печать списка номеров</a>
+            </div>
+            <div class="tool-button">
+                <img src="image/catalog.png" alt="#">
+                <a href="#">календарь занятости</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Основное содержание-->
+    <div class="main-content">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>№ комнаты</th>
+                    <th>Тип помещения</th>
+                    <th>Ответственный персонал</th>
+                    <th>Статус номера</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>вольер</td>
+                    <td>Айнура</td>
+                    <td>готов</td>
+                </tr>
+                <tr>
+                    <td>200</td>
+                    <td>клетка</td>
+                    <td>Огузок</td>
+                    <td>готов</td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>клетка</td>
+                    <td>Огузок</td>
+                    <td>готов</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>клетка</td>
+                    <td>Огузок</td>
+                    <td>требуется уборка</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>вольер</td>
+                    <td>Айнура</td>
+                    <td>готов</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>клетка</td>
+                    <td>Огузок</td>
+                    <td>требуется уборка</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--<img class="costily" src="image/costily.png" alt="календарик">-->
+
+    </div>
+
+</section>
+    
+</body>
+</html>
