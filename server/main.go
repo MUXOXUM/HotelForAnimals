@@ -17,12 +17,17 @@ func main() {
 	// Инициализация маршрутов
 	router := gin.Default()
 
+	router.Static("/static", "../client")
+	router.Static("/pages", "../client/pages")
 	router.POST("/register", handlers.RegisterUser)
 	router.POST("/login", handlers.LoginHandler)
 
 	router.POST("/rooms/addroom", handlers.AddRoom)
 	router.POST("/pets/add", handlers.AddPet)
 
+	router.GET("/register", func(c *gin.Context) {
+		c.File("../client/pages/register.html")   //gg
+	})
 	router.GET("/users", middlewares.AuthMiddleware, handlers.GetUsers)
 	router.GET("/users/:id", middlewares.AuthMiddleware, handlers.GetUserByID)
 	router.PUT("/users/:id", middlewares.AuthMiddleware, handlers.UpdateUser)

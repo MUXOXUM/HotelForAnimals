@@ -14,15 +14,16 @@ var secretKey = "your_secret_key" // Замените на ваш секретн
 // RegisterUser регистрирует нового пользователя
 func RegisterUser(c *gin.Context) {
 	var creds struct {
-		Email    string `json:"email"`
-		Password string `json:"password"`
 		Name     string `json:"name"`
 		Surname  string `json:"surname"`
 		Phone    int    `json:"phone"`
+		Email    string `json:"email"`
+		Password string `json:"password"`
 	}
 
+
 	if err := c.ShouldBindJSON(&creds); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid input"})
+		c.JSON(http.StatusBadRequest, gin.H{"error": creds})
 		return
 	}
 
@@ -34,13 +35,13 @@ func RegisterUser(c *gin.Context) {
 		return
 	}
 
-	queryPetOwner := `INSERT INTO "petOwner" (id, name, surname, phone, email, created_at) VALUES ($1, $2, $3, $4, $5, $6)`
-	_, err = db.DB.Exec(queryPetOwner, userID, creds.Name, creds.Surname, creds.Phone, creds.Email, time.Now())
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err})
+	// queryPetOwner := `INSERT INTO "petOwner" (id, name, surname, phone, email, created_at) VALUES ($1, $2, $3, $4, $5, $6)`
+	// _, err = db.DB.Exec(queryPetOwner, userID, creds.Name, creds.Surname, creds.Phone, creds.Email, time.Now())
+	// if err != nil {
+	// 	c.JSON(http.StatusInternalServerError, gin.H{"error": err})
 
-		return
-	}
+	// 	return
+	// }
 
 	c.JSON(http.StatusOK, gin.H{"message": "User registered successfully"})
 }
