@@ -22,8 +22,10 @@
 .booking::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../images/main-images/booking-bg.jpg");
     filter: blur(5px);
 }
@@ -174,7 +176,7 @@
         padding-inline: 50px;
     }
 
-    .info__block--left .info__block-image{
+    .info__block--left .info__block-image {
         order: -1;
     }
 
@@ -192,5 +194,3 @@
         font-weight: 300;
     }
 }
-
-
