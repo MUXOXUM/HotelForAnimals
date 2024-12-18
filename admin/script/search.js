@@ -11,15 +11,15 @@ function highlightWord(word) {
             const frag = document.createDocumentFragment();
             let match;
             while (match = regex.exec(node.textContent)) {
-              let textBeforeMatch = document.createTextNode(spanify.shift()); //Get the next piece of text
-              frag.appendChild(textBeforeMatch) //Append this piece of text
-              const span = document.createElement('span');
-              span.textContent = match[1];
-              span.classList.add('highlight');
-              frag.appendChild(span); //Append the highlighted word
+                let textBeforeMatch = document.createTextNode(spanify.shift()); //Get the next piece of text
+                frag.appendChild(textBeforeMatch) //Append this piece of text
+                const span = document.createElement('span');
+                span.textContent = match[1];
+                span.classList.add('highlight');
+                frag.appendChild(span); //Append the highlighted word
             }
             const remainingText = document.createTextNode(spanify.join('')) //Append any leftover text
-             frag.appendChild(remainingText)
+            frag.appendChild(remainingText)
             node.parentNode.replaceChild(frag, node);
         }
     });

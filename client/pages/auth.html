@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +10,36 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/auth.css">
 </head>
+
 <body>
     <main class="main">
         <h1 class="form-title">— Вход в аккаунт —</h1>
         <form id="authForm" novalidate data-js-form>
             <p class="field">
-                <div class="entryarea">
-                    <input 
-                        class="testinput" 
-                        type="email" 
-                        name="email" 
-                        id="email"
-                        minlength="5"
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
-                        required 
-                    />
-                    <div class="labelline">Эл. Почта</div>
-                </div>
-                <span class="field__errors" id="email-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="email" name="email" id="email" minlength="5"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" required />
+                <div class="labelline">Эл. Почта</div>
+            </div>
+            <span class="field__errors" id="email-errors" data-js-form-field-error></span>
             </p>
             <p class="field">
-                <div class="entryarea">
-                    <input class="testinput" 
-                        type="text" 
-                        name="password" 
-                        id="password"
-                        required 
-                        minlength="8" 
-                        maxlength="16" 
-                        pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
-                        title="Пароль должен быть длиной от 8 до 16 символов, содержать как минимум одну цифру, одну букву в верхнем и одну букву нижнем регистре."
-                    />
-                    <div class="labelline">Пароль</div>
-                </div>
-                <span class="field__errors" id="password-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="text" name="password" id="password" required minlength="8" maxlength="16"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                    title="Пароль должен быть длиной от 8 до 16 символов, содержать как минимум одну цифру, одну букву в верхнем и одну букву нижнем регистре." />
+                <div class="labelline">Пароль</div>
+            </div>
+            <span class="field__errors" id="password-errors" data-js-form-field-error></span>
             </p>
-            
+
             <button class="button" type="submit">Войти</button>
         </form>
-        <p class="register-link">Нет аккаунта?&nbsp;<a class="register-link--underlined" href="register.html">Регистрация</a></p>
-        <img 
-            src="../images/register-images/logo-dark.svg" 
-            alt="Логотип" 
-            class="dark-logo reg__logo"
-            loading="lazy"
-        />
+        <p class="register-link">Нет аккаунта?&nbsp;<a class="register-link--underlined"
+                href="register.html">Регистрация</a></p>
+        <img src="../images/register-images/logo-dark.svg" alt="Логотип" class="dark-logo reg__logo" loading="lazy" />
     </main>
     <script src="../js/authValidation.js"></script>
 </body>
+
 </html>

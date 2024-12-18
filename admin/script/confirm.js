@@ -5,10 +5,10 @@ function handleRowClick(event) {
     const row = event.target.closest('tr');
     if (row) {
         if (selectedRow) {
-            selectedRow.classList.remove('selected'); 
+            selectedRow.classList.remove('selected');
         }
-        row.classList.add('selected'); 
-        selectedRow = row 
+        row.classList.add('selected');
+        selectedRow = row
     }
 }
 
@@ -16,7 +16,7 @@ function setSuccessful() {
     if (selectedRow) {
         selectedRow.removeAttribute('class');
         selectedRow.classList.add('success');
-        selectedRow.cells[1].textContent = 'успешно'; 
+        selectedRow.cells[1].textContent = 'успешно';
         selectedRow = null;
         const highlightedRows = document.querySelectorAll(".selected");
         highlightedRows.forEach(row => row.classList.remove("selected"));
@@ -26,8 +26,8 @@ function setSuccessful() {
 function setReject() {
     if (selectedRow) {
         selectedRow.removeAttribute('class');
-        selectedRow.classList.add('reject'); 
-        selectedRow.cells[1].textContent = 'отказано'; 
+        selectedRow.classList.add('reject');
+        selectedRow.cells[1].textContent = 'отказано';
         selectedRow = null;
         const highlightedRows = document.querySelectorAll(".selected");
         highlightedRows.forEach(row => row.classList.remove("selected"));

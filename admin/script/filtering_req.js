@@ -14,8 +14,8 @@ document.getElementById('filterToolOn').style.display = 'none';
 
 
 
-function toggleVisibility(){
-    
+function toggleVisibility() {
+
     const filterToolOn = document.getElementById('filterToolOn');
 
     if (filterToolOn) {
@@ -39,14 +39,14 @@ function toggleRows(filterBy) {
 
     rows.forEach(row => {
         const secondCell = row.cells[1];
-        if(filterBy === 'все'){
+        if (filterBy === 'все') {
             row.style.display = '';
-        }else if(secondCell && secondCell.textContent.trim() !== filterBy && secondCell.textContent.trim() !== "Статус заявки") {
+        } else if (secondCell && secondCell.textContent.trim() !== filterBy && secondCell.textContent.trim() !== "Статус заявки") {
             row.style.display = 'none';
-        }else{
-            row.style.display = '';      
+        } else {
+            row.style.display = '';
         }
-        
+
     });
 }
 

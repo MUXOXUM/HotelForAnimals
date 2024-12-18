@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/payment.css">
 </head>
+
 <body>
     <main class="main container">
         <div class="payment">
@@ -19,28 +21,32 @@
             <form class="payment__taxi" novalidate>
                 <p class="field">
                     <input class="field__input" type="checkbox" name="taxi">
-                    <label for="taxi">*заказать зоотакси от вашего дома (По москве)  от 600р</label>
+                    <label for="taxi">*заказать зоотакси от вашего дома (По москве) от 600р</label>
                 </p>
                 <p class="field field--block">
                     <label class="field__label" for="address">Адрес:</label>
-                    <input class="field__input field__input-address" placeholder="ул. Пушкина 23" name="address" type="text">
+                    <input class="field__input field__input-address" placeholder="ул. Пушкина 23" name="address"
+                        type="text">
                 </p>
                 <p class="field field--block">
-                    <label class="field__label" for="comment">Укажите особенности, имеющиеся у вашего питомца, включая заболевания:</label>
-                    <textarea class="payment__comment" name="comment" id="comment" placeholder="У собаки имеется непереносимость ..."></textarea>
+                    <label class="field__label" for="comment">Укажите особенности, имеющиеся у вашего питомца, включая
+                        заболевания:</label>
+                    <textarea class="payment__comment" name="comment" id="comment"
+                        placeholder="У собаки имеется непереносимость ..."></textarea>
                 </p>
                 <p class="field field--block">
-                    <label class="field__label required-label">Прикрепите справку о здоровье животного и о сделанных ему прививках в формате PDF:</label>
-                    <div class="certificates__wrap">
-                        <div class="certificates">
-                            <label for="vaccination">Прививки:</label>
-                            <input name="vaccination" type="file" required>
-                        </div>
-                        <div class="certificates">
-                            <label for="health">Справка о здоровье:</label>
-                            <input name="health" type="file" required>
-                        </div>
+                    <label class="field__label required-label">Прикрепите справку о здоровье животного и о сделанных ему
+                        прививках в формате PDF:</label>
+                <div class="certificates__wrap">
+                    <div class="certificates">
+                        <label for="vaccination">Прививки:</label>
+                        <input name="vaccination" type="file" required>
                     </div>
+                    <div class="certificates">
+                        <label for="health">Справка о здоровье:</label>
+                        <input name="health" type="file" required>
+                    </div>
+                </div>
                 </p>
                 <button class="button payment__button" type="submit">Оставить заявку</button>
             </form>
@@ -48,20 +54,19 @@
         <div class="formSumbitMessage visually-hidden">
             <p class="formSumbitMessage__text">Спасибо! Мы с вами свяжемся!</p>
         </div>
-        
+
         <div class="succes-window visually-hidden">
-            <p class="succes-window__text">Вы успешно оставили заявку на услугу: <b>Передержка собаки в общем питомнике с 23 апр. по 29 апр. </b> Вы можете отслеживать статус заявки в личном кабинете в вкладке "активные усулуги". Спасибо, что выбираете Eleon!</p>
+            <p class="succes-window__text">Вы успешно оставили заявку на услугу: <b>Передержка собаки в общем питомнике
+                    с 23 апр. по 29 апр. </b> Вы можете отслеживать статус заявки в личном кабинете в вкладке "активные
+                усулуги". Спасибо, что выбираете Eleon!</p>
             <a class="button succes-window__button" href="account.html">в личный кабинет</a>
-            <img 
-                src="../images/register-images/logo-dark.svg" 
-                alt="Логотип" 
-                class="dark-logo succes-window__logo"
-                loading="lazy"
-            />
-            
+            <img src="../images/register-images/logo-dark.svg" alt="Логотип" class="dark-logo succes-window__logo"
+                loading="lazy" />
+
         </div>
     </main>
 
     <script src="../js/service-request.js"></script>
 </body>
+
 </html>

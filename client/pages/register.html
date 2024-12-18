@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/register.css">
 </head>
+
 <body>
     <a class="testButtonForRedirect button" href="account.html">test</a>
     <main class="main">
@@ -16,105 +18,58 @@
         <form id="regForm" novalidate data-js-form>
 
             <p class="field">
-                <div class="entryarea">
-                    <input 
-                        class="testinput" 
-                        type="text" 
-                        name="username" 
-                        id="username"
-                        required 
-                        minlength="4" 
-                        maxlength="16" 
-                        aria-errormessage="username-errors"
-                    />
-                    <div class="labelline">Имя</div>  
-                </div>
-                <span class="field__errors" id="username-errors" data-js-form-field-error></span>    
+            <div class="entryarea">
+                <input class="testinput" type="text" name="username" id="username" required minlength="4" maxlength="16"
+                    aria-errormessage="username-errors" />
+                <div class="labelline">Имя</div>
+            </div>
+            <span class="field__errors" id="username-errors" data-js-form-field-error></span>
             </p>
-            
+
             <p class="field">
-                <div class="entryarea">
-                    <input 
-                        class="testinput" 
-                        type="text" 
-                        name="lastname" 
-                        id="lastname"
-                        required 
-                        minlength="4" 
-                        maxlength="16" 
-                        aria-errormessage="lastname-errors"
-                    />
-                    <div class="labelline">Фамилия</div>
-                </div>
-                <span class="field__errors" id="lastname-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="text" name="lastname" id="lastname" required minlength="4" maxlength="16"
+                    aria-errormessage="lastname-errors" />
+                <div class="labelline">Фамилия</div>
+            </div>
+            <span class="field__errors" id="lastname-errors" data-js-form-field-error></span>
             </p>
 
 
             <p class="field">
-                <div class="entryarea">
-                    <input 
-                        class="testinput" 
-                        type="tel" 
-                        name="phone" 
-                        id="phone"
-                        maxlength="12"
-                        pattern="^((\+7|7|8)+([0-9]){10})$"
-                        required 
-                        aria-errormessage="phone-errors"
-                    />
-                    <div class="labelline">Телефон</div>    
-                </div>
-                <span class="field__errors" id="phone-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="tel" name="phone" id="phone" maxlength="12"
+                    pattern="^((\+7|7|8)+([0-9]){10})$" required aria-errormessage="phone-errors" />
+                <div class="labelline">Телефон</div>
+            </div>
+            <span class="field__errors" id="phone-errors" data-js-form-field-error></span>
             </p>
 
             <p class="field">
-                <div class="entryarea">
-                    <input 
-                        class="testinput" 
-                        type="email" 
-                        name="email" 
-                        id="email"
-                        minlength="5"
-                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
-                        required 
-                    />
-                    <div class="labelline">Эл. Почта</div>
-                </div>
-                <span class="field__errors" id="email-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="email" name="email" id="email" minlength="5"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$" required />
+                <div class="labelline">Эл. Почта</div>
+            </div>
+            <span class="field__errors" id="email-errors" data-js-form-field-error></span>
             </p>
 
             <p class="field">
-                <div class="entryarea">
-                    <input class="testinput" 
-                        type="text" 
-                        name="password" 
-                        id="password"
-                        required 
-                        minlength="8" 
-                        maxlength="16" 
-                        pattern = "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
-                        title="Пароль должен быть длиной от 8 до 16 символов, содержать как минимум одну цифру, одну букву в верхнем и одну букву нижнем регистре."
-                    />
-                    <div class="labelline">Пароль</div>
-                </div>
-                <span class="field__errors" id="password-errors" data-js-form-field-error></span>
+            <div class="entryarea">
+                <input class="testinput" type="text" name="password" id="password" required minlength="8" maxlength="16"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                    title="Пароль должен быть длиной от 8 до 16 символов, содержать как минимум одну цифру, одну букву в верхнем и одну букву нижнем регистре." />
+                <div class="labelline">Пароль</div>
+            </div>
+            <span class="field__errors" id="password-errors" data-js-form-field-error></span>
             </p>
 
-            <input 
-                class="button" 
-                type="submit" 
-                value="Зарегистрироваться" 
-                name="submitButton"
-            />
+            <input class="button" type="submit" value="Зарегистрироваться" name="submitButton" />
         </form>
-        <img 
-            src="../images/register-images/logo-dark.svg" 
-            alt="Логотип" 
-            class="dark-logo reg__logo"
-            loading="lazy"
-        />
+        <img src="../images/register-images/logo-dark.svg" alt="Логотип" class="dark-logo reg__logo" loading="lazy" />
     </main>
 
     <script src="../js/validation.js"></script>
 </body>
+
 </html>
