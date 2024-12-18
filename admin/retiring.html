@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,92 +17,150 @@
     <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
     <!--Боковая панель -->
-<section class="left-panel" id="leftPanel">
+    <section class="left-panel" id="leftPanel">
 
-    <div class="top-panel-admin-info">
-        <img src="image/admin_logo.png" alt="Фото администратора">
-        <div class="admin-info-text">
-            <p id="admin-name">Лебедев П.Н.</p>
-            <p>Администратор</p> 
+        <div class="top-panel-admin-info">
+            <img src="image/admin_logo.png" alt="Фото администратора">
+            <div class="admin-info-text">
+                <p id="admin-name">Лебедев П.Н.</p>
+                <p>Администратор</p>
+            </div>
+
         </div>
-        
-    </div>
 
-    <div class="menu">
-        <a class="menu-button" href="request_processing.html">Обработка заявок</a>
-        <a class="menu-button" href="room_control.html">Состояние номеров</a>
-        <a class="menu-button" href="owner.html">Хозяева</a>
-        <a class="menu-button" href="retiring.html">Выбывающие</a>
-        <a class="menu-button" href="pets.html">Информация о животных</a>
-        <a class="menu-button" href="#">Выйти из учетной записи</a>
-    </div>
+        <div class="menu">
+            <a class="menu-button" href="request_processing.html">Обработка заявок</a>
+            <a class="menu-button" href="room_control.html">Состояние номеров</a>
+            <a class="menu-button" href="owner.html">Хозяева</a>
+            <a class="menu-button" href="retiring.html">Выбывающие</a>
+            <a class="menu-button" href="pets.html">Информация о животных</a>
+            <a class="menu-button" href="#">Выйти из учетной записи</a>
+        </div>
 
-</section>
+    </section>
 
 
-<section class="main">
-    <!--Панель инструментов-->
-    <div class="tool-bar">
-        <h1>Выбывающие</h1>
-        <div class="tools">
-            <div class="tool-button">
-                <img src="image/exit.png" alt="#">
-                <a href="#">выбытие</a>
-            </div>
-            <div class="tool-button">
-                <img src="image/exit2.png" alt="#">
-                <a href="#">продление</a>
-            </div>
-            <div class="tool-button-input">
-                <input type="text" placeholder="Поиск...">
+    <section class="main">
+        <!--Панель инструментов-->
+        <div class="tool-bar">
+            <h1>Выбывающие</h1>
+            <div class="tools">
+                <div class="tool-button">
+                    <img src="image/exit.png" alt="#">
+                    <a href="#">выбытие</a>
+                </div>
+                <div class="tool-button">
+                    <img src="image/exit2.png" alt="#">
+                    <a href="#">продление</a>
+                </div>
+                <div class="tool-button-input">
+                    <input type="text" placeholder="Поиск...">
+                </div>
             </div>
         </div>
-    </div>
-
-    
-    <!--Основное содержание-->
-    <div class="main-content">
-
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Дата выезда</th>
-                    <th>Время выезда</th>
-                    <th>Карта гостя</th>
-                    <th>Номер гостиницы</th>
-                    <th>Контрагент</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>3</td>
-                    <td>28.06.2027</td>
-                    <td>14:00</td>
-                    <td>Кирилл Сергеевич Поплевкин</td>
-                    <td>89892455656</td>
-                    <td>Калюка В.С.</td>
-                </tr>
-                
-                <tr>
-                    <td>5</td>
-                    <td>22.02.2042</td>
-                    <td>14:00</td>
-                    <td>Алексей Михайлович Черников</td>
-                    <td>89185685656</td>
-                    <td>Калюка В.С.</td>
-                </tr>
-            </tbody>
-        </table>
 
 
-    </div>
-</section>
+        <!--Основное содержание-->
+        <div class="main-content">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Дата выезда</th>
+                        <th>Время выезда</th>
+                        <th>Имя хозяина</th>
+                        <th>Телефон</th>
+                        <th>Ответственный за процесс</th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>28.06.2024</td>
+                        <td>14:00</td>
+                        <td>Гришин Е. М.</td>
+                        <td>89892455656</td>
+                        <td>Калюка В.С.</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>22.12.2024</td>
+                        <td>16:00</td>
+                        <td>Лаптева В.Б.</td>
+                        <td>89185685656</td>
+                        <td>Горохова М.В.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>12.08.2024</td>
+                        <td>10:00</td>
+                        <td>Сергеев И.А.</td>
+                        <td>89561234567</td>
+                        <td>Калюка В.С.</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>25.10.2024</td>
+                        <td>12:00</td>
+                        <td>Петрова О.Ю.</td>
+                        <td>89672345678</td>
+                        <td>Калюка В.С.</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>03.02.2024</td>
+                        <td>15:00</td>
+                        <td>Иванов С.К.</td>
+                        <td>89453456781</td>
+                        <td>Васильева Л.Р.</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>17.05.2024</td>
+                        <td>11:00</td>
+                        <td>Смирнова А.Г.</td>
+                        <td>89764567892</td>
+                        <td>Орлова Т.Ф.</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>30.09.2024</td>
+                        <td>13:00</td>
+                        <td>Кузнецов В.Э.</td>
+                        <td>89875678903</td>
+                        <td>Орлова Т.Ф.</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>14.12.2024</td>
+                        <td>09:00</td>
+                        <td>Фомина У.З.</td>
+                        <td>89986759034</td>
+                        <td>Орлова Т.Ф.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </section>
 
 </body>
+
 </html>

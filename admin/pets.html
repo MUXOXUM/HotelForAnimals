@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,104 +17,170 @@
     <!--Шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-<!--Боковая панель -->
-<section class="left-panel" id="leftPanel">
 
-    <div class="top-panel-admin-info">
-        <img src="image/admin_logo.png" alt="Фото администратора">
-        <div class="admin-info-text">
-            <p id="admin-name">Лебедев П.Н.</p>
-            <p>Администратор</p> 
+    <!--Боковая панель -->
+    <section class="left-panel" id="leftPanel">
+
+        <div class="top-panel-admin-info">
+            <img src="image/admin_logo.png" alt="Фото администратора">
+            <div class="admin-info-text">
+                <p id="admin-name">Лебедев П.Н.</p>
+                <p>Администратор</p>
+            </div>
+
         </div>
-        
-    </div>
 
-    <div class="menu">
-        <a class="menu-button" href="request_processing.html">Обработка заявок</a>
-        <a class="menu-button" href="room_control.html">Состояние номеров</a>
-        <a class="menu-button" href="owner.html">Хозяева</a>
-        <a class="menu-button" href="retiring.html">Выбывающие</a>
-        <a class="menu-button" href="pets.html">Информация о животных</a>
-        <a class="menu-button" href="#">Выйти из учетной записи</a>
-    </div>
+        <div class="menu">
+            <a class="menu-button" href="request_processing.html">Обработка заявок</a>
+            <a class="menu-button" href="room_control.html">Состояние номеров</a>
+            <a class="menu-button" href="owner.html">Хозяева</a>
+            <a class="menu-button" href="retiring.html">Выбывающие</a>
+            <a class="menu-button" href="pets.html">Информация о животных</a>
+            <a class="menu-button" href="#">Выйти из учетной записи</a>
+        </div>
 
-</section>
+    </section>
 
-<section class="main">
-    <!--Панель инструментов-->
-    <div class="tool-bar">
-        <h1>Информация о питомцах</h1>
-        <div class="tools">
-            <div class="tool-button">
-                <img src="image/bowl.png" alt="#">
-                <a href="#">корм</a>
-            </div>
-            <div class="tool-button">
-                <img src="image/camera.png" alt="#">
-                <a href="#">фотосессия</a>
-            </div>
-            <div class="tool-button">
-                <img src="image/timer.png" alt="#">
-                <a href="#">настроить время кормления</a>
-            </div>
-            <div class="tool-button-input">
-                <input type="text" placeholder="Поиск...">
+    <section class="main">
+        <!--Панель инструментов-->
+        <div class="tool-bar">
+            <h1>Информация о питомцах</h1>
+            <div class="tools">
+                <div class="tool-button">
+                    <img src="image/bowl.png" alt="#">
+                    <a href="#">корм</a>
+                </div>
+                <div class="tool-button">
+                    <img src="image/camera.png" alt="#">
+                    <a href="#">фотосессия</a>
+                </div>
+                <div class="tool-button">
+                    <img src="image/timer.png" alt="#">
+                    <a href="#">настроить время кормления</a>
+                </div>
+                <div class="tool-button-input">
+                    <input type="text" placeholder="Поиск...">
+                </div>
             </div>
         </div>
-    </div>
-
-    
-    <!--Основное содержание-->
-    <div class="main-content">
-
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>ID животного</th>
-                    <th>Животное</th>
-                    <th>Корм</th>
-                    <th>Помещение</th>
-                    <th>Фотосессия</th>
-                    <th>№ помещения</th>
-                    <th>Часы кормления</th>
-                    <th>Доп. услуги</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>Кот</td>
-                    <td>Wisskass Premium ultra</td>
-                    <td>клетка</td>
-                    <td>да</td>
-                    <td>200</td>
-                    <td>9,13,18</td>
-                    <td>нет</td>
-                </tr>
-                
-                <tr>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>Змея (ядовитая)</td>
-                    <td>мышь белая</td>
-                    <td>премиум-террариум</td>
-                    <td>нет</td>
-                    <td>203</td>
-                    <td>10,14,19</td>
-                    <td>почесывание спинки</td>
-                </tr>
-            </tbody>
-        </table>
 
 
-    </div>
-</section>
+        <!--Основное содержание-->
+        <div class="main-content">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Животное</th>
+                        <th>Корм</th>
+                        <th>Помещение</th>
+                        <th>Фотосессия</th>
+                        <th>№ помещения</th>
+                        <th>Часы кормления</th>
+                        <th>Доп. услуги</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Кот (домашний)</td>
+                        <td>Wisskass Premium</td>
+                        <td>клетка</td>
+                        <td>да</td>
+                        <td>200</td>
+                        <td>9,13,18</td>
+                        <td>нет</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Змея (питон)</td>
+                        <td>Мышь белая</td>
+                        <td>премиум-террариум</td>
+                        <td>нет</td>
+                        <td>203</td>
+                        <td>10,14,19</td>
+                        <td>почесывание спинки</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Попугай (жако)</td>
+                        <td>Орехи и фрукты</td>
+                        <td>большая клетка</td>
+                        <td>да</td>
+                        <td>201</td>
+                        <td>8,15,22</td>
+                        <td>разговорные занятия</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Собака (овчарка)</td>
+                        <td>Pedigree</td>
+                        <td>вольер</td>
+                        <td>да</td>
+                        <td>204</td>
+                        <td>11,16,23</td>
+                        <td>дрессировка</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Хомяк (джунгарский)</td>
+                        <td>Семена и овощи</td>
+                        <td>колесо для бега</td>
+                        <td>нет</td>
+                        <td>205</td>
+                        <td>12,17,24</td>
+                        <td>чистка клетки</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Лягушка (тритон)</td>
+                        <td>Насекомые</td>
+                        <td>аквариум</td>
+                        <td>нет</td>
+                        <td>206</td>
+                        <td>13,18,25</td>
+                        <td>замена воды</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Кролик (карликовый)</td>
+                        <td>Сено и морковь</td>
+                        <td>клетка с домиком</td>
+                        <td>да</td>
+                        <td>207</td>
+                        <td>14,19,26</td>
+                        <td>стрижка когтей</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Черепаха (средиземноморская)</td>
+                        <td>Салат и фрукты</td>
+                        <td>террариум</td>
+                        <td>нет</td>
+                        <td>208</td>
+                        <td>15,20,27</td>
+                        <td>купание</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </section>
 
 </body>
+
 </html>
