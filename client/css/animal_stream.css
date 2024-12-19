@@ -1,0 +1,22 @@
+.stream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.stream__inner {
+    width: 56.25rem;
+    height: auto;
+    max-height: 600px;
+    background-color: var(--color-semiLight);
+    border: 1px solid var(--color-dark);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video-js {
+    width: 100%;
+}

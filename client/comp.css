@@ -1,0 +1,283 @@
+
+body {
+    padding: 100px;
+}
+
+
+.button {
+    background-color: var(--color-dark);
+    color: var(--color-semiLight);
+    padding-block: 10px;
+    padding-inline: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    outline: 1px solid transparent;
+
+    transition: background-color var(--transition-duration);
+}
+
+.button:hover {
+    background-color: #2f2f2f;
+    outline-color: #2f2f2f;
+}
+
+/* Поле ввода даты (инпут) */
+.standard-input {
+    background: none;
+    border: 2px solid var(--color-dark);
+    border-radius: 12px;
+    padding-block: 10px;
+    padding-inline: 10px;
+    font-weight: medium;
+}
+
+/* Поле ввода текта (инпут) */
+.auth-input {
+    background-color: var(--color-semiLight);
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    transition:  var(--transition-duration);
+}
+ 
+
+.auth-input::placeholder {
+    color: #4a4947ab;
+}
+
+
+
+/* Тестовый инпут */
+.inp-container {
+    max-width: 400px;
+    
+}
+
+.entryarea {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.testinput {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 45px;
+    border-radius: 6px;
+    border: 2px solid var(--color-dark);
+    background-color: transparent;
+    transition: var(--transition-duration) ease;
+    z-index: 100;
+}
+
+.labelline {
+    position: absolute;
+    font-size: 1.2em;
+    color: #4a494799;
+    padding: 0 15px;
+    margin: 0 10px;
+    background-color: var(--color-light);
+    transition: var(--transition-duration) ease;
+}
+
+.testinput:focus,
+.testinput:valid{
+    color: var(--color-semiDark);
+    border: 2.5px solid var(--color-semiDark);
+}
+
+.testinput:focus + .labelline,
+.testinput:valid + .labelline{
+    color: var(--color-semiDark);
+    height: 20px;
+    line-height: 20px;
+    padding: 0 12px;
+    transform: translate(-5px, -10px) scale(0.77);
+    z-index: 110;
+}     
+
+
+
+/* Таблица */
+.table {
+    border: var(--table-border);
+}
+
+.thead {
+    background-color: #bbb093;
+    border-bottom: var(--table-border);
+}
+
+.tbody .tr {
+    background-color: var(--color-semiLight);
+    transition: background-color var(--transition-duration);
+}
+
+.tbody .tr:hover {
+    background-color: #ffbb00;
+}
+
+td:not(:last-child) {
+    border-right: var(--table-border);
+}
+
+.td {
+    padding: 5px 10px;
+}
+
+.td:first-child {
+    border-right: var(--table-border);
+}
+
+.table__link {
+    display: block;
+}
+
+
+
+/* Опция для личного кабинета */
+.service {
+    display: grid;
+    grid-template-columns: 130px 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--color-semiLight);
+    border: 1px solid var(--color-dark);
+    border-radius: 12px;
+    width: 380px;
+    transition: color var(--transition-duration), background-color var(--transition-duration);
+}
+
+.service:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+.service__icon svg {
+    width: 130px;
+    height: auto;
+}
+
+.service__body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.service__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* способы оплаты */
+.payment__variables-list {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.payment__variables-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--color-dark);
+    padding: 10px;
+
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+.payment__variable-title {
+    font-size: 15px;
+    text-align: center;
+}
+
+.payment__variables-image svg {
+    width: 50px;
+    height: auto;
+}
+
+.payment__variables-item:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    cursor: pointer;
+}
+
+
+/* Опция для выбора товара */
+.service__body--food {
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--color-dark);
+}
+
+.service--food:hover {
+    background-color: var(--color-semiLight);
+    cursor: pointer;
+}
+
+.service__icon--withbg {
+    background-color: white;
+}
+
+.service__button--thin {
+    padding: 0;
+    border-radius: 6px;
+}
+
+.service__title--food {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* форма для оплаты услуги */
+.payment-form {
+    background-color: var(--color-light);
+    border: 2px solid var(--color-dark);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding-block: 30px;
+    padding-inline: 20px;
+    gap: 10px;
+}
+
+.payment-form__title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.payment-form__good-name {
+    background-color: var(--color-semiLight);
+    border: 1px solid var(--color-dark);
+    border-radius: 6px;
+    padding: 5px 30px;
+    margin-bottom: 20px;
+}
+
+.payment-form__price {
+    font-size: 20px;
+}
+
+.payment-form__button {
+    border-radius: 6px;
+    font-size: 18px;
+}

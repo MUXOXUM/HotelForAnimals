@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleon - Обработка заявок</title> <!--Не забыть поменять--> <!-- -->
+    <link rel="icon" href="image/admin_logo.png" type="image/x-icon">
+
+    <!--Стили-->
+    <link rel="stylesheet" href="style/normalize.css"> <!--Нормализация-->
+    <link rel="stylesheet" href="style/main_style.css"> <!--Основные стил -->
+    <link rel="stylesheet" href="style/table_style.css"> <!--Стили таблиц-->
+    <link rel="stylesheet" href="style/left_panel_style.css"> <!--Стили боковой пенели-->
+
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: black;
+            /* Optionally set text color for visibility */
+        }
+    </style>
+
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Боковая панель -->
+    <section class="left-panel" id="leftPanel">
+
+        <div class="top-panel-admin-info">
+            <img src="image/admin_logo.png" alt="Фото администратора">
+            <div class="admin-info-text">
+                <p id="admin-name">Лебедев П.Н.</p>
+                <p>Администратор</p>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <a class="menu-button" href="request_processing.html">Обработка заявок</a>
+            <a class="menu-button" href="room_control.html">Состояние номеров</a>
+            <a class="menu-button" href="owner.html">Хозяева</a>
+            <a class="menu-button" href="retiring.html">Выбывающие</a>
+            <a class="menu-button" href="pets.html">Информация о животных</a>
+            <a class="menu-button" href="#">Выйти из учетной записи</a>
+        </div>
+
+    </section>
+
+
+
+    <section class="main">
+        <!--Панель инструментов-->
+        <div class="tool-bar">
+            <h1>Обработка заявок</h1>
+            <div class="tools">
+                <div class="tool-button" id="successButton">
+                    <img src="image/profile.png" alt="#">
+                    <a href="#">подтвердить бронь</a>
+                </div>
+                <div class="tool-button" id="rejectButton">
+                    <img src="image/reject.png#">
+                    <a href="#">отказ по заявке</a>
+                </div>
+                <div class="filter-tool">
+
+                    <div class="tool-button" id="filterA">
+                        <img src="image/binocular.png" alt="#">
+                        <a href="#" id="filterTextA">фильтрация: off</a>
+                    </div>
+
+                    <div id="filterToolOn">
+                        <div class="tool-button" id="filterS">
+                            <a href="#" id="filterTextS">фильтрация: успешно</a>
+                        </div>
+                        <div class="tool-button" id="filterR">
+                            <a href="#" id="filterTextR">фильтрация: отказано</a>
+                        </div>
+                        <div class="tool-button" id="filterI">
+                            <a href="#" id="filterTextI">фильтрация: в обработке</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Основное содержание-->
+        <div class="main-content" id="main">
+
+            <table id="reqTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Статус заявки</th>
+                        <th>Имя хозяина</th>
+                        <th>Телефон</th>
+                        <th>Вид животного</th>
+                        <th>ID услуги</th>
+                        <th>Адрес</th>
+                        <th>Заезд</th>
+                        <th>Выезд</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="script/req.js"></script>
+    <script src="script/filtering_req.js"></script>
+    <script src="script/confirm.js"></script>
+</body>
+
+</html>
