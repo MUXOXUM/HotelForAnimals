@@ -1,0 +1,79 @@
+<!--Сайт заглушка для выбора-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор сайта</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f7f8fa;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .button {
+            text-decoration: none;
+            padding: 20px 60px;
+            border: 2px solid #333;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .button {
+                width: auto;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Сделайте свой выбор</h1>
+    <div class="buttons">
+        <a href="../client/pages/main.html" class="button" >Клиент</a>
+        <a href="../admin/request_processing.html" class="button">Админ</a>
+    </div>
+    <div class="footer">Выбор клиент/админ части</div>
+</body>
+</html>
